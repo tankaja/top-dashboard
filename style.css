@@ -1,15 +1,19 @@
 body {
     display: flex;
     margin: 0px;
+    background-color: aliceblue;
 }
 
 /* left */
 .dashboard {
-    background-color: skyblue;
+    align-items: center;
+    background-color:rgb(64, 194, 233);
 }
 
 .dashboard-heading {
-    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    font-size: xx-large;
     padding: 1rem;
 }
 
@@ -20,17 +24,64 @@ ul {
 
 ul li {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+ul li span {
+    vertical-align: middle;
+    padding-left: 1rem;
 }
 
 
 /* right */
+
+/* top */
+.top {
+    box-shadow: 2px 2px 4px black;
+}
+
+.top-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 0px;
+}
+
+.search-side input[type=text] {
+    background-color: aliceblue;
+    border-radius: 25px;
+    border: 0px;
+    width: max(30rem, 30vw);
+    height: 1.5rem;
+}
+
+.search-side, .notification-side {
+    display: flex;
+    align-items: center;
+}
+
 .top-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    padding-top: 0px;
 }
 
+
+button {
+    border-radius: 25px;
+    background-color:rgb(64, 194, 233);
+    border: 0px;
+    width: 6rem;
+    height: 1.5rem;
+    margin-left: 0.8rem;
+}
+
+/* bottom */
 .bottom {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -44,12 +95,31 @@ ul li {
     gap: 1.5rem;
 }
 
+.project-interaction {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.project-data {
+    border-left: solid yellow 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .projects-right {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
 }
 
-.announcement p {
+.announcement p, .project-data p {
     font-size: small;
+    color: rgb(43, 39, 39);
+}
+
+.top, .project-data, .announcement-data, .trending-data {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
 }

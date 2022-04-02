@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    margin: 0px;
+}
+
+/* left */
+.dashboard {
+    background-color: skyblue;
+}
+
+.dashboard-heading {
+    font-size: x-large;
+    padding: 1rem;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 1rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+/* right */
+.top-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.projects-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.announcement p {
+    font-size: small;
+}

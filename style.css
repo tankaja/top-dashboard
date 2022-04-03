@@ -5,7 +5,7 @@
 body {
     display: flex;
     margin: 0px;
-    background-color: aliceblue;
+    background-color: rgb(205, 215, 226);;
 }
 
 /* left */
@@ -57,11 +57,19 @@ ul li span {
     padding-bottom: 0px;
 }
 
+.notification-side img {
+    padding-right: 1rem;
+}
+
 .search-side input[type=text] {
-    background-color: aliceblue;
+    background-color: rgb(205, 215, 226);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 25px;
     border: 0px;
-    width: max(30rem, 30vw);
+    min-width: 30vw;
     height: 1.5rem;
 }
 
@@ -102,6 +110,8 @@ button {
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
     padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .heading {
@@ -115,6 +125,7 @@ button {
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr;
     gap: 1.5rem;
+    height: 96%;
 }
 
 .project-interaction {
@@ -146,10 +157,6 @@ button {
     margin-bottom: 0px;
 }
 
-.announcement-data {
-    padding-bottom: 1rem;
-}
-
 .announcement-data .head {
     font-size:medium;
     font-weight: 600;
@@ -162,6 +169,10 @@ button {
 }
 
 /* trending */
+
+.trending {
+    height: 84%;
+}
 
 .trending-data {
     display: flex;
